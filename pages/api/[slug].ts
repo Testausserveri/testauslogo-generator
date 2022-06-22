@@ -2,11 +2,14 @@ import { NextApiHandler } from "next";
 import TextToSVG from "text-to-svg";
 import { promisify } from "util";
 import { readFileSync } from "fs";
+import path from "path";
 
 const load = promisify(TextToSVG.load);
 
 const handler: NextApiHandler = async (req, res) => {
-  const textToSvg = await load("./public/poppins-v20-latin-ext_latin_devanagari-regular.woff",);
+  const basePath = path.join(process.cwd(), "public")
+  const fontFilePath = path.join(basePath, "poppins-v20-latin-ext_latin_devanagari-regular.woff");
+  const textToSvg = await load(fontFilePath);
 
   if (!textToSvg) {
     return {
@@ -29,7 +32,7 @@ const handler: NextApiHandler = async (req, res) => {
 
   const svgContent = textToSvg.getSVG(String(text), options);
 
-  const testauskoiraLogo = readFileSync("./public/logo.svg", "utf8").replace(/height=\"[0-9]*\"/, `height="${textToSvg.getHeight(fontSize)}"`);
+  const testauskoiraLogo = readFileSync(path.join(basePath, "logo.svg"), "utf8").replace(/height=\"[0-9]*\"/, `height="${textToSvg.getHeight(fontSize)}"`);
   const result = `<svg>${testauskoiraLogo}${svgContent}</svg>`
 
   res
