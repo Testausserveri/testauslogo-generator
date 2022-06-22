@@ -8,7 +8,7 @@ const load = promisify(TextToSVG.load);
 
 const handler: NextApiHandler = async (req, res) => {
   const basePath = path.join(process.cwd(), "public")
-  const fontFilePath = path.join(basePath, "poppins-v20-latin-ext_latin_devanagari-regular.woff");
+  const fontFilePath = path.join(basePath, "poppins-v20-latin-ext_latin_devanagari-600.woff");
   const textToSvg = await load(fontFilePath);
 
   if (!textToSvg) {
