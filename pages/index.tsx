@@ -19,7 +19,8 @@ export default function Home() {
           <h1>Testauslogo Generator</h1>
           <p>Generate logos for Testausserveri projects</p>
         </div>
-        <form onSubmit={() => {
+        <form onSubmit={(e) => {
+          e.preventDefault();
           router.push(`/${text}`);
         }}>
           <input
