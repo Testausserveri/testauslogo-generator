@@ -9,17 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "15.2.2",
+    "next": "15.2.4",
     "react": "19.0.0",
     "react-dom": "19.0.0",
     "svg-builder": "^2.0.0",
     "text-to-svg": "^3.1.5"
   },
   "devDependencies": {
-    "@types/node": "^22.13.10",
-    "@types/react": "^19.0.10",
+    "@types/node": "^22.13.13",
+    "@types/react": "^19.0.12",
     "@types/text-to-svg": "^3.1.4",
-    "eslint": "9.22.0",
-    "eslint-config-next": "15.2.2"
+    "eslint": "9.23.0",
+    "eslint-config-next": "15.2.4"
   }
 }
