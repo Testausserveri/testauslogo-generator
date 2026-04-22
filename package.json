@@ -9,16 +9,16 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "16.2.3",
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "next": "^16.2.4",
+    "react": "^19.2.5",
+    "react-dom": "^19.2.5",
     "text-to-svg": "^3.1.5"
   },
   "devDependencies": {
-    "@types/node": "^25.5.0",
+    "@types/node": "^25.6.0",
     "@types/react": "^19.2.14",
     "@types/text-to-svg": "^3.1.4",
-    "eslint": "10.1.0",
-    "eslint-config-next": "16.2.1"
+    "eslint": "^10.2.1",
+    "eslint-config-next": "^16.2.4"
   }
 }
