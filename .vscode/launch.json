@@ -3,7 +3,7 @@
   "configurations": [
     {
       "type": "node",
-      "name": "Next.js Debug",
+      "name": "Debug HTTP server",
       "request": "launch",
       "runtimeExecutable": "npm",
       "runtimeArgs": ["run-script", "dev"]

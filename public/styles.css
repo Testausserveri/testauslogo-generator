@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/poppins-v20-latin-ext_latin_devanagari-regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/poppins-v20-latin-ext_latin_devanagari-600.woff2") format("woff2");
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 16px;
+}
+
+main,
+.texts,
+form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+main,
+form {
+  gap: 16px;
+}
+
+h1 {
+  margin: 0;
+}
+
+.texts {
+  margin-bottom: 16px;
+}
+
+.texts p {
+  margin-bottom: 0;
+}
+
+form {
+  width: 100%;
+}
+
+input {
+  border: 1px solid black;
+  border-radius: 9999px;
+  padding: 8px 16px;
+  width: 100%;
+}
+
+button {
+  border: none;
+  color: white;
+  background-color: rgb(86, 86, 223);
+  padding: 12px 32px;
+  border-radius: 9999px;
+  box-shadow: 0 2px 7px #00000077;
+  transition: transform 200ms;
+}
+
+button:hover {
+  cursor: pointer;
+  transform: translateY(2px);
+}
+
+.brand {
+  position: absolute;
+  left: 40px;
+  bottom: 20px;
+}

@@ -1,23 +1,25 @@
 {
   "name": "testauslogo-generator",
   "image": "mcr.microsoft.com/devcontainers/typescript-node:dev-24-trixie",
-  "containerEnv": {
-    "NEXT_TELEMETRY_DISABLED": "1"
-  },
   "features": {
     "ghcr.io/devcontainers/features/git:1": {}
   },
-  "forwardPorts": [3000],
+  "forwardPorts": [
+    3000
+  ],
   "portsAttributes": {
     "3000": {
-      "label": "Next.js Dev Server",
+      "label": "HTTP server",
       "onAutoForward": "notify"
     }
   },
   "postCreateCommand": "npm install",
   "customizations": {
     "vscode": {
-      "extensions": ["dbaeumer.vscode-eslint", "esbenp.prettier-vscode"],
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ],
       "settings": {
         "editor.defaultFormatter": "esbenp.prettier-vscode",
         "editor.formatOnSave": true,

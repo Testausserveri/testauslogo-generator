@@ -2,24 +2,19 @@
   "name": "testauslogo-generator",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "dev": "node --watch --experimental-transform-types server.ts",
+    "start": "node --experimental-transform-types server.ts"
   },
   "dependencies": {
-    "next": "^16.2.11",
-    "react": "^19.2.6",
-    "react-dom": "^19.2.6",
-    "text-to-svg": "^3.1.5",
-    "sharp": "^0.35.3"
+    "fastify": "^5.10.0",
+    "sharp": "^0.35.3",
+    "text-to-svg": "^3.1.5"
   },
   "devDependencies": {
-    "@types/node": "^25.6.2",
-    "@types/react": "^19.2.14",
+    "@types/node": "^26.1.1",
     "@types/text-to-svg": "^3.1.4",
-    "eslint": "^10.3.0",
-    "eslint-config-next": "^16.2.6"
+    "typescript": "^7.0.2"
   }
 }
