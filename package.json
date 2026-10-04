@@ -8,7 +8,7 @@
     "start": "node --experimental-transform-types server.ts"
   },
   "dependencies": {
-    "fastify": "^5.12.1",
+    "fastify": "^5.12.5",
     "sharp": "^0.35.4",
     "text-to-svg": "^3.1.5"
   },
