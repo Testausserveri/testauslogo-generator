@@ -9,7 +9,7 @@
   },
   "dependencies": {
     "fastify": "^5.12.6",
-    "sharp": "^0.35.4",
+    "sharp": "^0.35.5",
     "text-to-svg": "^3.1.5"
   },
   "devDependencies": {
